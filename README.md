@@ -1,3 +1,3 @@
-# E155 Lab 1
+# E155 Lab 3
 
-This repository includes code to verify the proper assembly of the E155 development board and operation of the MCU and FPGA.
+This repository includes code to read input from a keypad and output the last two inputs on a dual seven segment display (most recent input on the right display).
