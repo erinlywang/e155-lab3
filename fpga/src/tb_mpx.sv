@@ -1,5 +1,5 @@
 /// Author: Erin Wang
-/// Email: eringwang@g.hmc.edu
+/// Email: erinwang@g.hmc.edu
 /// Date: 09/23/2025
 
 // tb_mpx module tests the top module 
