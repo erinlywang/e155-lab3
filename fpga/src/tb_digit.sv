@@ -1,6 +1,6 @@
 /// Author: Erin Wang
 /// Email: erinwang@g.hmc.edu
-/// Date: 09/20/2025
+/// Date: 09/23/2025
 
 // tb_digit module tests the digit module 
 // It tests that the outputs do not update in NOUPDATE state,
