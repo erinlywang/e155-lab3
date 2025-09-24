@@ -1,0 +1,106 @@
+C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_debouncer.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_debouncer.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module tb_debouncer
+
+Top level modules:
+	tb_debouncer
+
+} {} {}} C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/synchronizer.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/synchronizer.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module synchronizer
+
+Top level modules:
+	synchronizer
+
+} {} {}} C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_digit.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_digit.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module tb_digit
+
+Top level modules:
+	tb_digit
+
+} {} {}} C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/debouncer.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/debouncer.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module debouncer
+
+Top level modules:
+	debouncer
+
+} {} {}} C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_scanner.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_scanner.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module tb_scanner
+
+Top level modules:
+	tb_scanner
+
+} {} {}} C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/digit.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/digit.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module digit
+
+Top level modules:
+	digit
+
+} {} {}} C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_mpx.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_mpx.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module tb_mpx
+
+Top level modules:
+	tb_mpx
+
+} {} {}} C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/scanner.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/scanner.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module scanner
+
+Top level modules:
+	scanner
+
+} {} {}} C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/mpx.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/mpx.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module mpx
+
+Top level modules:
+	mpx
+
+} {} {}} C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/sevseg.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/sevseg.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module sevseg
+
+Top level modules:
+	sevseg
+
+} {} {}} C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/keypad.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/keypad.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module keypad
+
+Top level modules:
+	keypad
+
+} {} {}} C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module tb_top
+
+Top level modules:
+	tb_top
+
+} {} {}} C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_sevseg.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_sevseg.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module tb_sevseg
+
+Top level modules:
+	tb_sevseg
+
+} {} {}} C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/top.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/top.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module top
+
+Top level modules:
+	top
+
+} {} {}} C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module tb_keypad
+
+Top level modules:
+	tb_keypad
+
+} {} {}}

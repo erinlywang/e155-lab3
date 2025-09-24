@@ -1,0 +1,1885 @@
+# Reading pref.tcl
+# //  Questa Lattice OEM Edition-64
+# //  Version 2024.2 win64 May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+project open C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/lab3_sim
+# Loading project lab3_sim
+# Compile of tb_top.sv failed with 2 errors.
+# Compile of tb_top.sv was successful.
+# Compile of top.sv was successful.
+vsim -gui work.tb_top -L iCE40UP -Lf iCE40UP -voptargs=+acc
+# vsim -gui work.tb_top -L iCE40UP -Lf iCE40UP -voptargs="+acc" 
+# Start time: 17:27:53 on Sep 22,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Error: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/top.sv(41): (vopt-2135) Too many port connections. Expected 9, found 10.
+# ** Error: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/top.sv(39): (vopt-2135) Too many port connections. Expected 7, found 10.
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=2, Warnings=1.
+# Error loading design
+# End time: 17:27:53 on Sep 22,2025, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 5
+# Compile of top.sv was successful.
+vsim -gui -L iCE40UP -Lf iCE40UP -voptargs=+acc work.tb_top
+# vsim -gui -L iCE40UP -Lf iCE40UP -voptargs="+acc" work.tb_top 
+# Start time: 20:22:46 on Sep 22,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Error: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/top.sv(40): (vopt-2135) Too many port connections. Expected 9, found 10.
+# ** Error: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/top.sv(38): (vopt-2135) Too many port connections. Expected 7, found 10.
+# ** Error: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/top.sv(35): (vopt-2135) Too many port connections. Expected 6, found 7.
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=3, Warnings=1.
+# Error loading design
+# End time: 20:22:47 on Sep 22,2025, Elapsed time: 0:00:01
+# Errors: 3, Warnings: 3
+# Compile of debouncer.sv failed with 2 errors.
+# Compile of keypad.sv was successful.
+# Compile of mpx.sv was successful.
+# Compile of scanner.sv was successful.
+# Compile of sevseg.sv was successful.
+# Compile of tb_debouncer.sv was successful.
+# Compile of tb_keypad.sv was successful.
+# Compile of tb_mpx.sv was successful.
+# Compile of tb_scanner.sv was successful.
+# Compile of tb_sevseg.sv was successful.
+# Compile of tb_top.sv was successful.
+# Compile of top.sv was successful.
+# Compile of tb_digit.sv was successful.
+# Compile of digit.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of tb_sync.sv was successful.
+# 16 compiles, 1 failed with 2 errors.
+# Compile of debouncer.sv was successful.
+vsim -gui -L iCE40UP -Lf iCE40UP -voptargs=+acc work.tb_top
+# vsim -gui -L iCE40UP -Lf iCE40UP -voptargs="+acc" work.tb_top 
+# Start time: 20:26:08 on Sep 22,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vopt-143) Recognized 1 FSM in module "scanner(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "debouncer(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "digit(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.synchronizer(fast)
+# Loading work.scanner(fast)
+# Loading work.debouncer(fast)
+# Loading work.digit(fast)
+# Loading work.keypad(fast)
+# Loading work.mpx(fast)
+# Loading work.sevseg(fast)
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'dut'.  Expected 7, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv Line: 29
+# ** Warning: (vsim-3722) C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv(29): [TFMPC] - Missing connection for port 'led0'.
+add wave -position insertpoint sim:/tb_top/dut/*
+run -all
+#  seg = 1000000 (1111001 expected)
+# ** Note: $finish    : C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv(56)
+#    Time: 120024 ns  Iteration: 0  Instance: /tb_top
+# 1
+# Break in Module tb_top at C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv line 56
+# Causality operation skipped due to absence of debug database file
+add wave -position insertpoint  \
+sim:/tb_top/dut/scan/state
+add wave -position insertpoint  \
+sim:/tb_top/dut/db/state
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.synchronizer(fast)
+# Loading work.scanner(fast)
+# Loading work.debouncer(fast)
+# Loading work.digit(fast)
+# Loading work.keypad(fast)
+# Loading work.mpx(fast)
+# Loading work.sevseg(fast)
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'dut'.  Expected 7, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv Line: 29
+# ** Warning: (vsim-3722) C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv(29): [TFMPC] - Missing connection for port 'led0'.
+run -all
+#  seg = 1000000 (1111001 expected)
+# ** Note: $finish    : C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv(56)
+#    Time: 120024 ns  Iteration: 0  Instance: /tb_top
+# 1
+# Break in Module tb_top at C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv line 56
+# Compile of debouncer.sv was successful.
+# Compile of keypad.sv was successful.
+# Compile of mpx.sv was successful.
+# Compile of scanner.sv was successful.
+# Compile of sevseg.sv was successful.
+# Compile of tb_debouncer.sv was successful.
+# Compile of tb_keypad.sv was successful.
+# Compile of tb_mpx.sv was successful.
+# Compile of tb_scanner.sv was successful.
+# Compile of tb_sevseg.sv was successful.
+# Compile of tb_top.sv was successful.
+# Compile of top.sv was successful.
+# Compile of tb_digit.sv was successful.
+# Compile of digit.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of tb_sync.sv was successful.
+# 16 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.synchronizer(fast)
+# Loading work.scanner(fast)
+# Loading work.debouncer(fast)
+# Loading work.digit(fast)
+# Loading work.keypad(fast)
+# Loading work.mpx(fast)
+# Loading work.sevseg(fast)
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'dut'.  Expected 7, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv Line: 29
+# ** Warning: (vsim-3722) C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv(29): [TFMPC] - Missing connection for port 'led0'.
+run -all
+#  seg = 1000000 (1111001 expected)
+#  seg = 1000000 (1111001 expected)
+# ** Note: $finish    : C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv(68)
+#    Time: 2012026 ns  Iteration: 0  Instance: /tb_top
+# 1
+# Break in Module tb_top at C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv line 68
+# Compile of tb_top.sv was successful.
+# Compile of top.sv was successful.
+# Compile of scanner.sv was successful.
+# Compile of debouncer.sv failed with 1 errors.
+# Compile of debouncer.sv was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vopt-143) Recognized 1 FSM in module "debouncer(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "scanner(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.synchronizer(fast)
+# Loading work.scanner(fast)
+# Loading work.debouncer(fast)
+# Loading work.digit(fast)
+# Loading work.keypad(fast)
+# Loading work.mpx(fast)
+# Loading work.sevseg(fast)
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'dut'.  Expected 7, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv Line: 29
+# ** Warning: (vsim-3722) C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv(29): [TFMPC] - Missing connection for port 'led0'.
+add wave -position insertpoint sim:/tb_top/dut/db/*
+add wave -position insertpoint sim:/tb_top/dut/scan/*
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.synchronizer(fast)
+# Loading work.scanner(fast)
+# Loading work.debouncer(fast)
+# Loading work.digit(fast)
+# Loading work.keypad(fast)
+# Loading work.mpx(fast)
+# Loading work.sevseg(fast)
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'dut'.  Expected 7, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv Line: 29
+# ** Warning: (vsim-3722) C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv(29): [TFMPC] - Missing connection for port 'led0'.
+run -all
+#  seg = 1000000 (1111001 expected)
+#  seg = 1000000 (1111001 expected)
+# ** Note: $finish    : C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv(68)
+#    Time: 2012026 ns  Iteration: 0  Instance: /tb_top
+# 1
+# Break in Module tb_top at C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv line 68
+add wave -position insertpoint sim:/tb_top/dut/syncrow/*
+add wave -position insertpoint sim:/tb_top/dut/synccol/*
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.synchronizer(fast)
+# Loading work.scanner(fast)
+# Loading work.debouncer(fast)
+# Loading work.digit(fast)
+# Loading work.keypad(fast)
+# Loading work.mpx(fast)
+# Loading work.sevseg(fast)
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'dut'.  Expected 7, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv Line: 29
+# ** Warning: (vsim-3722) C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv(29): [TFMPC] - Missing connection for port 'led0'.
+run 10000
+run 1000000
+run 1000000
+run 1000000
+run -all
+#  seg = 1000000 (1111001 expected)
+#  seg = 1000000 (1111001 expected)
+# ** Note: $finish    : C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv(68)
+#    Time: 2012026 ns  Iteration: 0  Instance: /tb_top
+# 1
+# Break in Module tb_top at C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv line 68
+# Compile of debouncer.sv was successful.
+# Compile of keypad.sv was successful.
+# Compile of mpx.sv was successful.
+# Compile of scanner.sv was successful.
+# Compile of sevseg.sv was successful.
+# Compile of tb_debouncer.sv was successful.
+# Compile of tb_keypad.sv was successful.
+# Compile of tb_mpx.sv was successful.
+# Compile of tb_scanner.sv was successful.
+# Compile of tb_sevseg.sv was successful.
+# Compile of tb_top.sv was successful.
+# Compile of top.sv was successful.
+# Compile of tb_digit.sv was successful.
+# Compile of digit.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of tb_sync.sv was successful.
+# 16 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vopt-143) Recognized 1 FSM in module "debouncer(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "scanner(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.synchronizer(fast)
+# Loading work.scanner(fast)
+# Loading work.debouncer(fast)
+# Loading work.digit(fast)
+# Loading work.keypad(fast)
+# Loading work.mpx(fast)
+# Loading work.sevseg(fast)
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'dut'.  Expected 7, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv Line: 29
+# ** Warning: (vsim-3722) C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv(29): [TFMPC] - Missing connection for port 'led0'.
+# Warning in wave window restart: (vish-4014) No objects found matching '/tb_top/dut/scan/counter'. 
+run -all
+#  seg = 1000000 (1111001 expected)
+#  seg = 1000000 (1111001 expected)
+# ** Note: $finish    : C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv(68)
+#    Time: 2012026 ns  Iteration: 0  Instance: /tb_top
+# 1
+# Break in Module tb_top at C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv line 68
+add wave -position insertpoint  \
+sim:/tb_top/dut/en_scanstate
+add wave -position insertpoint  \
+sim:/tb_top/dut/en
+# Compile of top.sv was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vopt-143) Recognized 1 FSM in module "debouncer(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "scanner(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.synchronizer(fast)
+# Loading work.scanner(fast)
+# Loading work.debouncer(fast)
+# Loading work.digit(fast)
+# Loading work.keypad(fast)
+# Loading work.mpx(fast)
+# Loading work.sevseg(fast)
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'dut'.  Expected 7, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv Line: 29
+# ** Warning: (vsim-3722) C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv(29): [TFMPC] - Missing connection for port 'led0'.
+run -all
+#  seg = 1000000 (1111001 expected)
+#  seg = 1000000 (1111001 expected)
+# ** Note: $finish    : C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv(68)
+#    Time: 2012026 ns  Iteration: 0  Instance: /tb_top
+# 1
+# Break in Module tb_top at C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv line 68
+# Compile of debouncer.sv was successful.
+# Compile of keypad.sv was successful.
+# Compile of mpx.sv was successful.
+# Compile of scanner.sv was successful.
+# Compile of sevseg.sv was successful.
+# Compile of tb_debouncer.sv was successful.
+# Compile of tb_keypad.sv was successful.
+# Compile of tb_mpx.sv was successful.
+# Compile of tb_scanner.sv was successful.
+# Compile of tb_sevseg.sv was successful.
+# Compile of tb_top.sv was successful.
+# Compile of top.sv was successful.
+# Compile of tb_digit.sv was successful.
+# Compile of digit.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of tb_sync.sv was successful.
+# 16 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vopt-143) Recognized 1 FSM in module "debouncer(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "scanner(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.synchronizer(fast)
+# Loading work.scanner(fast)
+# Loading work.debouncer(fast)
+# Loading work.digit(fast)
+# Loading work.keypad(fast)
+# Loading work.mpx(fast)
+# Loading work.sevseg(fast)
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'dut'.  Expected 7, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv Line: 29
+# ** Warning: (vsim-3722) C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv(29): [TFMPC] - Missing connection for port 'led0'.
+# Warning in wave window restart: (vish-4014) No objects found matching '/tb_top/dut/en_scanstate'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/tb_top/dut/en'. 
+run -all
+#  seg = 1000000 (1111001 expected)
+#  seg = 1000000 (1111001 expected)
+# ** Note: $finish    : C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv(68)
+#    Time: 2012026 ns  Iteration: 0  Instance: /tb_top
+# 1
+# Break in Module tb_top at C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv line 68
+# Compile of tb_top.sv was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vopt-143) Recognized 1 FSM in module "debouncer(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "scanner(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.synchronizer(fast)
+# Loading work.scanner(fast)
+# Loading work.debouncer(fast)
+# Loading work.digit(fast)
+# Loading work.keypad(fast)
+# Loading work.mpx(fast)
+# Loading work.sevseg(fast)
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'dut'.  Expected 7, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv Line: 29
+# ** Warning: (vsim-3722) C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv(29): [TFMPC] - Missing connection for port 'led0'.
+run -all
+#  seg = 1000000 (1111001 expected)
+#  seg = 1000000 (1111001 expected)
+# ** Note: $finish    : C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv(68)
+#    Time: 1013026 ns  Iteration: 0  Instance: /tb_top
+# 1
+# Break in Module tb_top at C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv line 68
+add wave -position insertpoint  \
+sim:/tb_top/dut/db/state
+# Compile of debouncer.sv was successful.
+# Compile of keypad.sv was successful.
+# Compile of mpx.sv was successful.
+# Compile of scanner.sv was successful.
+# Compile of sevseg.sv was successful.
+# Compile of tb_debouncer.sv was successful.
+# Compile of tb_keypad.sv was successful.
+# Compile of tb_mpx.sv was successful.
+# Compile of tb_scanner.sv was successful.
+# Compile of tb_sevseg.sv was successful.
+# Compile of tb_top.sv was successful.
+# Compile of top.sv was successful.
+# Compile of tb_digit.sv was successful.
+# Compile of digit.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of tb_sync.sv was successful.
+# 16 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vopt-143) Recognized 1 FSM in module "debouncer(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "scanner(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.synchronizer(fast)
+# Loading work.scanner(fast)
+# Loading work.debouncer(fast)
+# Loading work.digit(fast)
+# Loading work.keypad(fast)
+# Loading work.mpx(fast)
+# Loading work.sevseg(fast)
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'dut'.  Expected 7, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv Line: 29
+# ** Warning: (vsim-3722) C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv(29): [TFMPC] - Missing connection for port 'led0'.
+run -all
+#  seg = 1000000 (1111001 expected)
+#  seg = 1000000 (1111001 expected)
+# ** Note: $finish    : C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv(68)
+#    Time: 1022035 ns  Iteration: 0  Instance: /tb_top
+# 1
+# Break in Module tb_top at C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv line 68
+# Compile of top.sv was successful.
+# Compile of tb_top.sv was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vopt-143) Recognized 1 FSM in module "debouncer(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "scanner(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.synchronizer(fast)
+# Loading work.scanner(fast)
+# Loading work.debouncer(fast)
+# Loading work.digit(fast)
+# Loading work.keypad(fast)
+# Loading work.mpx(fast)
+# Loading work.sevseg(fast)
+# ** Error (suppressible): (vsim-3839) Variable '/tb_top/dut/led0', driven via a port connection, is multiply driven. See C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/top.sv(37).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/top.sv Line: 25
+run -all
+# No Design Loaded!
+vsim -gui -L iCE40UP -Lf iCE40UP -voptargs=+acc work.tb_top
+# vsim -gui -L iCE40UP -Lf iCE40UP -voptargs="+acc" work.tb_top 
+# Start time: 20:26:08 on Sep 22,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=2.
+# Loading sv_std.std
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.synchronizer(fast)
+# Loading work.scanner(fast)
+# Loading work.debouncer(fast)
+# Loading work.digit(fast)
+# Loading work.keypad(fast)
+# Loading work.mpx(fast)
+# Loading work.sevseg(fast)
+# ** Error (suppressible): (vsim-3839) Variable '/tb_top/dut/led0', driven via a port connection, is multiply driven. See C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/top.sv(37).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/top.sv Line: 25
+# Error loading design
+# End time: 23:54:38 on Sep 22,2025, Elapsed time: 3:28:30
+# Errors: 2, Warnings: 3
+# Compile of scanner.sv was successful.
+# Compile of top.sv was successful.
+vsim -gui -L iCE40UP -Lf iCE40UP -voptargs=+acc work.tb_top
+# vsim -gui -L iCE40UP -Lf iCE40UP -voptargs="+acc" work.tb_top 
+# Start time: 23:55:46 on Sep 22,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vopt-143) Recognized 1 FSM in module "debouncer(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "scanner(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.synchronizer(fast)
+# Loading work.scanner(fast)
+# Loading work.debouncer(fast)
+# Loading work.digit(fast)
+# Loading work.keypad(fast)
+# Loading work.mpx(fast)
+# Loading work.sevseg(fast)
+# Warning in wave window restart: ** UI-Msg (Warning): (vish-4014) No objects found matching '/tb_top/dut/scan/led0'. 
+add wave -position insertpoint sim:/tb_top/dut/*
+run -all
+#  seg = 1000000 (1111001 expected)
+# ** Note: $finish    : C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv(69)
+#    Time: 157260116936 ps  Iteration: 0  Instance: /tb_top
+# 1
+# Break in Module tb_top at C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv line 69
+# Compile of debouncer.sv was successful.
+# Compile of keypad.sv was successful.
+# Compile of mpx.sv was successful.
+# Compile of scanner.sv was successful.
+# Compile of sevseg.sv was successful.
+# Compile of tb_debouncer.sv was successful.
+# Compile of tb_keypad.sv was successful.
+# Compile of tb_mpx.sv was successful.
+# Compile of tb_scanner.sv was successful.
+# Compile of tb_sevseg.sv was successful.
+# Compile of tb_top.sv was successful.
+# Compile of top.sv was successful.
+# Compile of tb_digit.sv was successful.
+# Compile of digit.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of tb_sync.sv was successful.
+# 16 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vopt-143) Recognized 1 FSM in module "debouncer(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "scanner(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.synchronizer(fast)
+# Loading work.scanner(fast)
+# Loading work.debouncer(fast)
+# Loading work.digit(fast)
+# Loading work.keypad(fast)
+# Loading work.mpx(fast)
+# Loading work.sevseg(fast)
+run -all
+#  seg = 1000000 (1111001 expected)
+# ** Note: $finish    : C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv(69)
+#    Time: 1021058 ns  Iteration: 0  Instance: /tb_top
+# 1
+# Break in Module tb_top at C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv line 69
+# Compile of top.sv was successful.
+# Compile of scanner.sv was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vopt-143) Recognized 1 FSM in module "debouncer(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "scanner(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.synchronizer(fast)
+# Loading work.scanner(fast)
+# Loading work.debouncer(fast)
+# Loading work.digit(fast)
+# Loading work.keypad(fast)
+# Loading work.mpx(fast)
+# Loading work.sevseg(fast)
+# Warning in wave window restart: (vish-4014) No objects found matching '/tb_top/dut/scan/released'. 
+run -all
+#  seg = 1000000 (1111001 expected)
+# ** Note: $finish    : C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv(69)
+#    Time: 1021058 ns  Iteration: 0  Instance: /tb_top
+# 1
+# Break in Module tb_top at C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv line 69
+# Compile of debouncer.sv was successful.
+# Compile of keypad.sv was successful.
+# Compile of mpx.sv was successful.
+# Compile of scanner.sv was successful.
+# Compile of sevseg.sv was successful.
+# Compile of tb_debouncer.sv was successful.
+# Compile of tb_keypad.sv was successful.
+# Compile of tb_mpx.sv was successful.
+# Compile of tb_scanner.sv was successful.
+# Compile of tb_sevseg.sv was successful.
+# Compile of tb_top.sv was successful.
+# Compile of top.sv was successful.
+# Compile of tb_digit.sv was successful.
+# Compile of digit.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of tb_sync.sv was successful.
+# 16 compiles, 0 failed with no errors.
+quit -sim
+# End time: 19:56:25 on Sep 23,2025, Elapsed time: 20:00:39
+# Errors: 0, Warnings: 3
+# Compile of debouncer.sv was successful.
+# Compile of keypad.sv was successful.
+# Compile of mpx.sv was successful.
+# Compile of scanner.sv was successful.
+# Compile of sevseg.sv was successful.
+# Compile of tb_debouncer.sv was successful.
+# Compile of tb_keypad.sv was successful.
+# Compile of tb_mpx.sv was successful.
+# Compile of tb_scanner.sv was successful.
+# Compile of tb_sevseg.sv was successful.
+# Compile of tb_top.sv was successful.
+# Compile of top.sv was successful.
+# Compile of tb_digit.sv was successful.
+# Compile of digit.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of tb_sync.sv was successful.
+# 16 compiles, 0 failed with no errors.
+vsim -gui -L iCE40UP -Lf iCE40UP -voptargs=+acc work.tb_scanner
+# vsim -gui -L iCE40UP -Lf iCE40UP -voptargs="+acc" work.tb_scanner 
+# Start time: 19:56:47 on Sep 23,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vopt-143) Recognized 1 FSM in module "scanner(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_scanner(fast)
+# Loading work.scanner(fast)
+add wave -position insertpoint sim:/tb_scanner/dut/*
+run -all
+# waiting for negedge
+# negedge occured
+# waiting for negedge
+# negedge occured
+# waiting for negedge
+# negedge occured
+# waiting for negedge
+# negedge occured
+#  SCANNED state test finished
+# Starting DEBOUNCED test
+# Checking in PRESSED state
+# Checking that we have stayed in PRESSED state
+# Checking we have left PRESSED state
+# Checking in PRESSED state
+#  col = 0001 (0010 expected)
+# Checking that we have stayed in PRESSED state
+#  col = 0001 (0010 expected)
+# Checking we have left PRESSED state
+# Checking in PRESSED state
+#  col = 0001 (0100 expected)
+# Checking that we have stayed in PRESSED state
+#  col = 0001 (0100 expected)
+# Checking we have left PRESSED state
+# Checking in PRESSED state
+#  col = 0001 (1000 expected)
+# Checking that we have stayed in PRESSED state
+#  col = 0001 (1000 expected)
+# Checking we have left PRESSED state
+# ** Note: $finish    : C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_scanner.sv(87)
+#    Time: 256 ns  Iteration: 0  Instance: /tb_scanner
+# 1
+# Break in Module tb_scanner at C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_scanner.sv line 87
+quit -sim
+# End time: 19:58:45 on Sep 23,2025, Elapsed time: 0:01:58
+# Errors: 0, Warnings: 3
+vsim -gui -L iCE40UP -Lf iCE40UP -voptargs=+acc work.tb_keypad
+# vsim -gui -L iCE40UP -Lf iCE40UP -voptargs="+acc" work.tb_keypad 
+# Start time: 19:58:57 on Sep 23,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Error (suppressible): C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv(24): (vopt-2912) Port 'clk' not found in module 'keypad' (1st connection).
+# ** Error (suppressible): C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv(24): (vopt-2912) Port 'rows' not found in module 'keypad' (3rd connection).
+# ** Error (suppressible): C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv(24): (vopt-2912) Port 'cols' not found in module 'keypad' (4th connection).
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=3, Warnings=1.
+# Error loading design
+# End time: 19:58:57 on Sep 23,2025, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 2
+# Compile of tb_keypad.sv was successful.
+vsim -gui -L iCE40UP -Lf iCE40UP -voptargs=+acc work.tb_keypad
+# vsim -gui -L iCE40UP -Lf iCE40UP -voptargs="+acc" work.tb_keypad 
+# Start time: 20:01:24 on Sep 23,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_keypad(fast)
+# Loading work.keypad(fast)
+add wave -position insertpoint sim:/tb_keypad/*
+run -all
+# ** Error: FAILED!: Press Key 1 -- got key=0000 expected key=0001 at time 172.
+#    Time: 172 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key 2 -- got key=0000 expected key=0010 at time 372.
+#    Time: 372 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key 3 -- got key=0000 expected key=0011 at time 572.
+#    Time: 572 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key A -- got key=0000 expected key=1010 at time 772.
+#    Time: 772 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key 4 -- got key=0000 expected key=0100 at time 972.
+#    Time: 972 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key 5 -- got key=0000 expected key=0101 at time 1172.
+#    Time: 1172 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key 6 -- got key=0000 expected key=0110 at time 1372.
+#    Time: 1372 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key B -- got key=0000 expected key=1011 at time 1572.
+#    Time: 1572 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key 7 -- got key=0000 expected key=0111 at time 1772.
+#    Time: 1772 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key 8 -- got key=0000 expected key=1000 at time 1972.
+#    Time: 1972 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key 9 -- got key=0000 expected key=1001 at time 2172.
+#    Time: 2172 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key C -- got key=0000 expected key=1100 at time 2322.
+#    Time: 2322 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key E -- got key=0000 expected key=1110 at time 2522.
+#    Time: 2522 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# PASSED!: Press Key 0 -- got key=0000 expected key=0000 at time 2722.
+# ** Error: FAILED!: Press Key F -- got key=0000 expected key=1111 at time 2922.
+#    Time: 2922 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key D -- got key=0000 expected key=1101 at time 3122.
+#    Time: 3122 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Note: $stop    : C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv(180)
+#    Time: 3372 ns  Iteration: 0  Instance: /tb_keypad
+# Break in Module tb_keypad at C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv line 180
+# Compile of debouncer.sv was successful.
+# Compile of keypad.sv was successful.
+# Compile of mpx.sv was successful.
+# Compile of scanner.sv was successful.
+# Compile of sevseg.sv was successful.
+# Compile of tb_debouncer.sv was successful.
+# Compile of tb_keypad.sv was successful.
+# Compile of tb_mpx.sv was successful.
+# Compile of tb_scanner.sv was successful.
+# Compile of tb_sevseg.sv was successful.
+# Compile of tb_top.sv was successful.
+# Compile of top.sv was successful.
+# Compile of tb_digit.sv was successful.
+# Compile of digit.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of tb_sync.sv was successful.
+# 16 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_keypad(fast)
+# Loading work.keypad(fast)
+run -all
+# ** Error: FAILED!: Press Key 1 -- got key=0000 expected key=0001 at time 172.
+#    Time: 172 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key 2 -- got key=0000 expected key=0010 at time 372.
+#    Time: 372 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key 3 -- got key=0000 expected key=0011 at time 572.
+#    Time: 572 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key A -- got key=0000 expected key=1010 at time 772.
+#    Time: 772 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key 4 -- got key=0000 expected key=0100 at time 972.
+#    Time: 972 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key 5 -- got key=0000 expected key=0101 at time 1172.
+#    Time: 1172 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key 6 -- got key=0000 expected key=0110 at time 1372.
+#    Time: 1372 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key B -- got key=0000 expected key=1011 at time 1572.
+#    Time: 1572 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key 7 -- got key=0000 expected key=0111 at time 1772.
+#    Time: 1772 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key 8 -- got key=0000 expected key=1000 at time 1972.
+#    Time: 1972 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key 9 -- got key=0000 expected key=1001 at time 2172.
+#    Time: 2172 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key C -- got key=0000 expected key=1100 at time 2322.
+#    Time: 2322 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key E -- got key=0000 expected key=1110 at time 2522.
+#    Time: 2522 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# PASSED!: Press Key 0 -- got key=0000 expected key=0000 at time 2722.
+# ** Error: FAILED!: Press Key F -- got key=0000 expected key=1111 at time 2922.
+#    Time: 2922 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key D -- got key=0000 expected key=1101 at time 3122.
+#    Time: 3122 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Note: $stop    : C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv(180)
+#    Time: 3372 ns  Iteration: 0  Instance: /tb_keypad
+# Break in Module tb_keypad at C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv line 180
+# Compile of tb_keypad.sv was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_keypad(fast)
+# Loading work.keypad(fast)
+run -all
+# ** Error: FAILED!: Press Key 1 -- got key=0000 expected key=0001 at time 172.
+#    Time: 172 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key 2 -- got key=0000 expected key=0010 at time 372.
+#    Time: 372 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key 3 -- got key=0000 expected key=0011 at time 572.
+#    Time: 572 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key A -- got key=0000 expected key=1010 at time 772.
+#    Time: 772 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key 4 -- got key=0000 expected key=0100 at time 972.
+#    Time: 972 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key 5 -- got key=0000 expected key=0101 at time 1172.
+#    Time: 1172 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key 6 -- got key=0000 expected key=0110 at time 1372.
+#    Time: 1372 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key B -- got key=0000 expected key=1011 at time 1572.
+#    Time: 1572 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key 7 -- got key=0000 expected key=0111 at time 1772.
+#    Time: 1772 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key 8 -- got key=0000 expected key=1000 at time 1972.
+#    Time: 1972 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key 9 -- got key=0000 expected key=1001 at time 2172.
+#    Time: 2172 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key C -- got key=0000 expected key=1100 at time 2322.
+#    Time: 2322 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key E -- got key=0000 expected key=1110 at time 2522.
+#    Time: 2522 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# PASSED!: Press Key 0 -- got key=0000 expected key=0000 at time 2722.
+# ** Error: FAILED!: Press Key F -- got key=0000 expected key=1111 at time 2922.
+#    Time: 2922 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key D -- got key=0000 expected key=1101 at time 3122.
+#    Time: 3122 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Note: $stop    : C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv(179)
+#    Time: 3372 ns  Iteration: 0  Instance: /tb_keypad
+# Break in Module tb_keypad at C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv line 179
+# Compile of tb_keypad.sv was successful.
+# Compile of tb_keypad.sv was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_keypad(fast)
+# Loading work.keypad(fast)
+run -all
+# ** Error: FAILED!: Press Key 1 -- got key=0000 expected key=0001 at time 172.
+#    Time: 172 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key 2 -- got key=0000 expected key=0010 at time 372.
+#    Time: 372 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key 3 -- got key=0000 expected key=0011 at time 572.
+#    Time: 572 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key A -- got key=0000 expected key=1010 at time 772.
+#    Time: 772 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key 4 -- got key=0000 expected key=0100 at time 972.
+#    Time: 972 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key 5 -- got key=0000 expected key=0101 at time 1172.
+#    Time: 1172 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key 6 -- got key=0000 expected key=0110 at time 1372.
+#    Time: 1372 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key B -- got key=0000 expected key=1011 at time 1572.
+#    Time: 1572 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key 7 -- got key=0000 expected key=0111 at time 1772.
+#    Time: 1772 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key 8 -- got key=0000 expected key=1000 at time 1972.
+#    Time: 1972 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key 9 -- got key=0000 expected key=1001 at time 2172.
+#    Time: 2172 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key C -- got key=0000 expected key=1100 at time 2322.
+#    Time: 2322 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key E -- got key=0000 expected key=1110 at time 2522.
+#    Time: 2522 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# PASSED!: Press Key 0 -- got key=0000 expected key=0000 at time 2722.
+# ** Error: FAILED!: Press Key F -- got key=0000 expected key=1111 at time 2922.
+#    Time: 2922 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key D -- got key=0000 expected key=1101 at time 3122.
+#    Time: 3122 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Note: $stop    : C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv(179)
+#    Time: 3372 ns  Iteration: 0  Instance: /tb_keypad
+# Break in Module tb_keypad at C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv line 179
+# Compile of tb_keypad.sv was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_keypad(fast)
+# Loading work.keypad(fast)
+run -all
+# ** Error: FAILED!: Press Key 1 -- got key=0000 expected key=0001 at time 172.
+#    Time: 172 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key 2 -- got key=0000 expected key=0010 at time 372.
+#    Time: 372 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key 3 -- got key=0000 expected key=0011 at time 572.
+#    Time: 572 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key A -- got key=0000 expected key=1010 at time 772.
+#    Time: 772 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key 4 -- got key=0000 expected key=0100 at time 972.
+#    Time: 972 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key 5 -- got key=0000 expected key=0101 at time 1172.
+#    Time: 1172 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key 6 -- got key=0000 expected key=0110 at time 1372.
+#    Time: 1372 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key B -- got key=0000 expected key=1011 at time 1572.
+#    Time: 1572 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key 7 -- got key=0000 expected key=0111 at time 1772.
+#    Time: 1772 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key 8 -- got key=0000 expected key=1000 at time 1972.
+#    Time: 1972 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key 9 -- got key=0000 expected key=1001 at time 2172.
+#    Time: 2172 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key C -- got key=0000 expected key=1100 at time 2322.
+#    Time: 2322 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key E -- got key=0000 expected key=1110 at time 2522.
+#    Time: 2522 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# PASSED!: Press Key 0 -- got key=0000 expected key=0000 at time 2722.
+# ** Error: FAILED!: Press Key F -- got key=0000 expected key=1111 at time 2922.
+#    Time: 2922 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key D -- got key=0000 expected key=1101 at time 3122.
+#    Time: 3122 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Note: $stop    : C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv(179)
+#    Time: 3372 ns  Iteration: 0  Instance: /tb_keypad
+# Break in Module tb_keypad at C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv line 179
+# Compile of tb_keypad.sv was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_keypad(fast)
+# Loading work.keypad(fast)
+run -all
+# ** Error: FAILED!: Press Key 1 -- got key=0000 expected key=0001 at time 172.
+#    Time: 172 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key 2 -- got key=0000 expected key=0010 at time 372.
+#    Time: 372 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key 3 -- got key=0000 expected key=0011 at time 572.
+#    Time: 572 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key A -- got key=0000 expected key=1010 at time 772.
+#    Time: 772 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key 4 -- got key=0000 expected key=0100 at time 972.
+#    Time: 972 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key 5 -- got key=0000 expected key=0101 at time 1172.
+#    Time: 1172 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key 6 -- got key=0000 expected key=0110 at time 1372.
+#    Time: 1372 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key B -- got key=0000 expected key=1011 at time 1572.
+#    Time: 1572 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key 7 -- got key=0000 expected key=0111 at time 1772.
+#    Time: 1772 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key 8 -- got key=0000 expected key=1000 at time 1972.
+#    Time: 1972 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key 9 -- got key=0000 expected key=1001 at time 2172.
+#    Time: 2172 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key C -- got key=0000 expected key=1100 at time 2322.
+#    Time: 2322 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key E -- got key=0000 expected key=1110 at time 2522.
+#    Time: 2522 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# PASSED!: Press Key 0 -- got key=0000 expected key=0000 at time 2722.
+# ** Error: FAILED!: Press Key F -- got key=0000 expected key=1111 at time 2922.
+#    Time: 2922 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key D -- got key=0000 expected key=1101 at time 3122.
+#    Time: 3122 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Note: $stop    : C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv(179)
+#    Time: 3372 ns  Iteration: 0  Instance: /tb_keypad
+# Break in Module tb_keypad at C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv line 179
+# Compile of keypad.sv was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_keypad(fast)
+# Loading work.keypad(fast)
+run -all
+# PASSED!: Press Key 1 -- got key=0001 expected key=0001 at time 172.
+# PASSED!: Press Key 2 -- got key=0010 expected key=0010 at time 372.
+# PASSED!: Press Key 3 -- got key=0011 expected key=0011 at time 572.
+# PASSED!: Press Key A -- got key=1010 expected key=1010 at time 772.
+# ** Error: FAILED!: Press Key 4 -- got key=0001 expected key=0100 at time 972.
+#    Time: 972 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key 5 -- got key=0010 expected key=0101 at time 1172.
+#    Time: 1172 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key 6 -- got key=0011 expected key=0110 at time 1372.
+#    Time: 1372 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key B -- got key=1010 expected key=1011 at time 1572.
+#    Time: 1572 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key 7 -- got key=0001 expected key=0111 at time 1772.
+#    Time: 1772 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key 8 -- got key=0010 expected key=1000 at time 1972.
+#    Time: 1972 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key 9 -- got key=0011 expected key=1001 at time 2172.
+#    Time: 2172 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key C -- got key=1010 expected key=1100 at time 2322.
+#    Time: 2322 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key E -- got key=0001 expected key=1110 at time 2522.
+#    Time: 2522 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key 0 -- got key=0010 expected key=0000 at time 2722.
+#    Time: 2722 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key F -- got key=0011 expected key=1111 at time 2922.
+#    Time: 2922 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Error: FAILED!: Press Key D -- got key=1010 expected key=1101 at time 3122.
+#    Time: 3122 ns  Scope: tb_keypad.check_key File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv Line: 55
+# ** Note: $stop    : C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv(179)
+#    Time: 3372 ns  Iteration: 0  Instance: /tb_keypad
+# Break in Module tb_keypad at C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv line 179
+# Compile of keypad.sv was successful.
+# Compile of tb_keypad.sv was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_keypad(fast)
+# Loading work.keypad(fast)
+# Warning in wave window restart: (vish-4014) No objects found matching '/tb_keypad/keys'. 
+run -all
+# ** Note: $finish    : C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv(146)
+#    Time: 54 ns  Iteration: 0  Instance: /tb_keypad
+# 1
+# Break in Module tb_keypad at C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv line 146
+quit -sim
+# End time: 20:53:15 on Sep 23,2025, Elapsed time: 0:51:51
+# Errors: 0, Warnings: 2
+# Compile of tb_debouncer.sv was successful.
+vsim -gui -L iCE40UP -Lf iCE40UP -voptargs=+acc work.tb_debouncer
+# vsim -gui -L iCE40UP -Lf iCE40UP -voptargs="+acc" work.tb_debouncer 
+# Start time: 21:11:30 on Sep 23,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vopt-143) Recognized 1 FSM in module "debouncer(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_debouncer(fast)
+# Loading work.debouncer(fast)
+add wave -position insertpoint  \
+sim:/tb_debouncer/dut/clk \
+sim:/tb_debouncer/dut/reset \
+sim:/tb_debouncer/dut/row \
+sim:/tb_debouncer/dut/col \
+sim:/tb_debouncer/dut/debouncedrow \
+sim:/tb_debouncer/dut/debouncedcol \
+sim:/tb_debouncer/dut/debounced \
+sim:/tb_debouncer/dut/state \
+sim:/tb_debouncer/dut/nextstate \
+sim:/tb_debouncer/dut/nextcounter \
+sim:/tb_debouncer/dut/counter \
+sim:/tb_debouncer/dut/last_pressed_row \
+sim:/tb_debouncer/dut/last_pressed_col \
+sim:/tb_debouncer/dut/pressed_row \
+sim:/tb_debouncer/dut/pressed_col \
+sim:/tb_debouncer/dut/pressed \
+sim:/tb_debouncer/dut/rowcheck \
+sim:/tb_debouncer/dut/released
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.tb_debouncer(fast)
+# Loading work.debouncer(fast)
+run -all
+#  debouncedrcol = 0001 (0000 expected)
+# ** Note: $finish    : C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_debouncer.sv(106)
+#    Time: 5000081 ns  Iteration: 0  Instance: /tb_debouncer
+# 1
+# Break in Module tb_debouncer at C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_debouncer.sv line 106
+# Compile of tb_debouncer.sv was successful.
+# Compile of tb_debouncer.sv was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_debouncer(fast)
+# Loading work.debouncer(fast)
+run -all
+# ** Note: $finish    : C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_debouncer.sv(106)
+#    Time: 5000081 ns  Iteration: 0  Instance: /tb_debouncer
+# 1
+# Break in Module tb_debouncer at C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_debouncer.sv line 106
+quit -sim
+# End time: 21:19:23 on Sep 23,2025, Elapsed time: 0:07:53
+# Errors: 0, Warnings: 2
+# Compile of tb_scanner.sv was successful.
+vsim -gui -L iCE40UP -Lf iCE40UP -voptargs=+acc work.tb_scanner
+# vsim -gui -L iCE40UP -Lf iCE40UP -voptargs="+acc" work.tb_scanner 
+# Start time: 21:44:29 on Sep 23,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_scanner(fast)
+# Loading work.scanner(fast)
+add wave -position insertpoint sim:/tb_scanner/dut/*
+run -all
+# waiting for negedge
+# negedge occured
+# waiting for negedge
+# negedge occured
+# waiting for negedge
+# negedge occured
+# waiting for negedge
+# negedge occured
+#  SCANNED state test finished
+# Starting PRESSED test
+# Checking PRESSED  0 state
+#  pressed_row = 0101 (0001 expected)
+# Checking PRESSED  1 state
+#  col = 0010 (0001 expected)
+#  pressed_row = 0101 (0001 expected)
+# Checking PRESSED  2 state
+#  col = 0100 (0001 expected)
+#  pressed_row = 0101 (0001 expected)
+# Checking PRESSED  3 state
+#  col = 1000 (0001 expected)
+#  pressed_row = 0101 (0001 expected)
+# ** Note: $finish    : C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_scanner.sv(91)
+#    Time: 242 ns  Iteration: 0  Instance: /tb_scanner
+# 1
+# Break in Module tb_scanner at C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_scanner.sv line 91
+# Compile of tb_scanner.sv was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_scanner(fast)
+# Loading work.scanner(fast)
+run -all
+# waiting for negedge
+# negedge occured
+# waiting for negedge
+# negedge occured
+# waiting for negedge
+# negedge occured
+# waiting for negedge
+# negedge occured
+#  SCANNED state test finished
+# Starting PRESSED test
+# Checking PRESSED  0 state
+# Checking PRESSED  1 state
+#  col = 0010 (0001 expected)
+# Checking PRESSED  2 state
+#  col = 0100 (0001 expected)
+# Checking PRESSED  3 state
+#  col = 1000 (0001 expected)
+# ** Note: $finish    : C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_scanner.sv(91)
+#    Time: 242 ns  Iteration: 0  Instance: /tb_scanner
+# 1
+# Break in Module tb_scanner at C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_scanner.sv line 91
+# Compile of tb_scanner.sv was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_scanner(fast)
+# Loading work.scanner(fast)
+run -all
+# waiting for negedge
+# negedge occured
+# waiting for negedge
+# negedge occured
+# waiting for negedge
+# negedge occured
+# waiting for negedge
+# negedge occured
+#  SCANNED state test finished
+# Starting PRESSED test
+# Checking PRESSED  0 state
+# Checking PRESSED  1 state
+# Checking PRESSED  2 state
+# Checking PRESSED  3 state
+# ** Note: $finish    : C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_scanner.sv(91)
+#    Time: 242 ns  Iteration: 0  Instance: /tb_scanner
+# 1
+# Break in Module tb_scanner at C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_scanner.sv line 91
+quit -sim
+# End time: 22:05:05 on Sep 23,2025, Elapsed time: 0:20:36
+# Errors: 0, Warnings: 2
+vsim -gui -L iCE40UP -Lf iCE40UP -voptargs=+acc work.tb_top
+# vsim -gui -L iCE40UP -Lf iCE40UP -voptargs="+acc" work.tb_top 
+# Start time: 22:05:22 on Sep 23,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vopt-143) Recognized 1 FSM in module "debouncer(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "digit(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "scanner(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.synchronizer(fast)
+# Loading work.scanner(fast)
+# Loading work.debouncer(fast)
+# Loading work.digit(fast)
+# Loading work.keypad(fast)
+# Loading work.mpx(fast)
+# Loading work.sevseg(fast)
+add wave -position insertpoint sim:/tb_top/*
+run -all
+#  seg = 1000000 (1111001 expected)
+#  seg = 1000000 (1111001 expected)
+# ** Note: $finish    : C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv(69)
+#    Time: 1021058 ns  Iteration: 0  Instance: /tb_top
+# 1
+# Break in Module tb_top at C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv line 69
+add wave -position insertpoint  \
+sim:/tb_top/dut/reset \
+sim:/tb_top/dut/row \
+sim:/tb_top/dut/col \
+sim:/tb_top/dut/seg \
+sim:/tb_top/dut/trans0 \
+sim:/tb_top/dut/trans1 \
+sim:/tb_top/dut/led0 \
+sim:/tb_top/dut/int_osc \
+sim:/tb_top/dut/s \
+sim:/tb_top/dut/sync_row \
+sim:/tb_top/dut/async_col \
+sim:/tb_top/dut/pressed_row \
+sim:/tb_top/dut/debouncedrow \
+sim:/tb_top/dut/debouncedcol \
+sim:/tb_top/dut/rowleft \
+sim:/tb_top/dut/rowright \
+sim:/tb_top/dut/colleft \
+sim:/tb_top/dut/colright \
+sim:/tb_top/dut/right_switch \
+sim:/tb_top/dut/left_switch \
+sim:/tb_top/dut/debounced \
+sim:/tb_top/dut/released
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.synchronizer(fast)
+# Loading work.scanner(fast)
+# Loading work.debouncer(fast)
+# Loading work.digit(fast)
+# Loading work.keypad(fast)
+# Loading work.mpx(fast)
+# Loading work.sevseg(fast)
+run -all
+#  seg = 1000000 (1111001 expected)
+#  seg = 1000000 (1111001 expected)
+# ** Note: $finish    : C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv(69)
+#    Time: 1021058 ns  Iteration: 0  Instance: /tb_top
+# 1
+# Break in Module tb_top at C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv line 69
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+add wave -position insertpoint  \
+sim:/tb_top/dut/db/counter
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.synchronizer(fast)
+# Loading work.scanner(fast)
+# Loading work.debouncer(fast)
+# Loading work.digit(fast)
+# Loading work.keypad(fast)
+# Loading work.mpx(fast)
+# Loading work.sevseg(fast)
+run -all
+#  seg = 1000000 (1111001 expected)
+#  seg = 1000000 (1111001 expected)
+# ** Note: $finish    : C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv(69)
+#    Time: 1021058 ns  Iteration: 0  Instance: /tb_top
+# 1
+# Break in Module tb_top at C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv line 69
+# Compile of debouncer.sv was successful.
+# Compile of keypad.sv was successful.
+# Compile of mpx.sv was successful.
+# Compile of scanner.sv was successful.
+# Compile of sevseg.sv was successful.
+# Compile of tb_debouncer.sv was successful.
+# Compile of tb_keypad.sv was successful.
+# Compile of tb_mpx.sv was successful.
+# Compile of tb_scanner.sv was successful.
+# Compile of tb_sevseg.sv was successful.
+# Compile of tb_top.sv was successful.
+# Compile of top.sv was successful.
+# Compile of tb_digit.sv was successful.
+# Compile of digit.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of tb_sync.sv was successful.
+# 16 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.synchronizer(fast)
+# Loading work.scanner(fast)
+# Loading work.debouncer(fast)
+# Loading work.digit(fast)
+# Loading work.keypad(fast)
+# Loading work.mpx(fast)
+# Loading work.sevseg(fast)
+run -all
+# Checking Key 1
+#  seg = 1000000 (1111001 expected)
+#  seg = 1000000 (1111001 expected)
+#  seg = 1000000 (1111001 expected)
+# Checking Key 2
+#  seg = 1111001 (0100100 expected)
+#  seg = 1111001 (0100100 expected)
+#  seg = 1111001 (0100100 expected)
+# ** Note: $finish    : C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv(98)
+#    Time: 20833451 ns  Iteration: 0  Instance: /tb_top
+# 1
+# Break in Module tb_top at C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv line 98
+add wave -position insertpoint sim:/tb_top/dut/dg/*
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.synchronizer(fast)
+# Loading work.scanner(fast)
+# Loading work.debouncer(fast)
+# Loading work.digit(fast)
+# Loading work.keypad(fast)
+# Loading work.mpx(fast)
+# Loading work.sevseg(fast)
+run -all
+# Checking Key 1
+#  seg = 1000000 (1111001 expected)
+#  seg = 1000000 (1111001 expected)
+#  seg = 1000000 (1111001 expected)
+# Checking Key 2
+#  seg = 1111001 (0100100 expected)
+#  seg = 1111001 (0100100 expected)
+#  seg = 1111001 (0100100 expected)
+# ** Note: $finish    : C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv(98)
+#    Time: 20833451 ns  Iteration: 0  Instance: /tb_top
+# 1
+# Break in Module tb_top at C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv line 98
+add wave -position insertpoint  \
+sim:/tb_top/dut/mpx/counter
+add wave -position insertpoint  \
+sim:/tb_top/dut/mpx/counter_output
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.synchronizer(fast)
+# Loading work.scanner(fast)
+# Loading work.debouncer(fast)
+# Loading work.digit(fast)
+# Loading work.keypad(fast)
+# Loading work.mpx(fast)
+# Loading work.sevseg(fast)
+run -all
+# Checking Key 1
+#  seg = 1000000 (1111001 expected)
+#  seg = 1000000 (1111001 expected)
+#  seg = 1000000 (1111001 expected)
+# Checking Key 2
+#  seg = 1111001 (0100100 expected)
+#  seg = 1111001 (0100100 expected)
+#  seg = 1111001 (0100100 expected)
+# ** Note: $finish    : C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv(98)
+#    Time: 20833451 ns  Iteration: 0  Instance: /tb_top
+# 1
+# Break in Module tb_top at C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv line 98
+# Compile of debouncer.sv was successful.
+# Compile of keypad.sv was successful.
+# Compile of mpx.sv was successful.
+# Compile of scanner.sv was successful.
+# Compile of sevseg.sv was successful.
+# Compile of tb_debouncer.sv was successful.
+# Compile of tb_keypad.sv was successful.
+# Compile of tb_mpx.sv was successful.
+# Compile of tb_scanner.sv was successful.
+# Compile of tb_sevseg.sv was successful.
+# Compile of tb_top.sv was successful.
+# Compile of top.sv was successful.
+# Compile of tb_digit.sv was successful.
+# Compile of digit.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of tb_sync.sv was successful.
+# 16 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.synchronizer(fast)
+# Loading work.scanner(fast)
+# Loading work.debouncer(fast)
+# Loading work.digit(fast)
+# Loading work.keypad(fast)
+# Loading work.mpx(fast)
+# Loading work.sevseg(fast)
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'dut'.  Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv Line: 23
+# ** Warning: (vsim-3722) C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv(23): [TFMPC] - Missing connection for port 'led1'.
+run -all
+# Checking Key 1
+# Break key hit
+# Break in Module tb_top at C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv line 27
+add wave -position insertpoint sim:/tb_top/*
+add wave -position insertpoint  \
+sim:/tb_top/dut/mpx/counter
+add wave -position insertpoint  \
+sim:/tb_top/dut/db/counter
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.synchronizer(fast)
+# Loading work.scanner(fast)
+# Loading work.debouncer(fast)
+# Loading work.digit(fast)
+# Loading work.keypad(fast)
+# Loading work.mpx(fast)
+# Loading work.sevseg(fast)
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'dut'.  Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv Line: 23
+# ** Warning: (vsim-3722) C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv(23): [TFMPC] - Missing connection for port 'led1'.
+run -all
+# Checking Key 1
+# Break key hit
+# Break in Module tb_top at C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv line 28
+# Compile of debouncer.sv was successful.
+# Compile of keypad.sv was successful.
+# Compile of mpx.sv was successful.
+# Compile of scanner.sv was successful.
+# Compile of sevseg.sv was successful.
+# Compile of tb_debouncer.sv was successful.
+# Compile of tb_keypad.sv was successful.
+# Compile of tb_mpx.sv was successful.
+# Compile of tb_scanner.sv was successful.
+# Compile of tb_sevseg.sv was successful.
+# Compile of tb_top.sv was successful.
+# Compile of top.sv was successful.
+# Compile of tb_digit.sv was successful.
+# Compile of digit.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of tb_sync.sv was successful.
+# 16 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vopt-143) Recognized 1 FSM in module "debouncer(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.synchronizer(fast)
+# Loading work.scanner(fast)
+# Loading work.debouncer(fast)
+# Loading work.digit(fast)
+# Loading work.keypad(fast)
+# Loading work.mpx(fast)
+# Loading work.sevseg(fast)
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'dut'.  Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv Line: 23
+# ** Warning: (vsim-3722) C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv(23): [TFMPC] - Missing connection for port 'led1'.
+run -all
+# Checking Key 1
+# Break key hit
+# Simulation stop requested.
+# Compile of tb_top.sv was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.synchronizer(fast)
+# Loading work.scanner(fast)
+# Loading work.debouncer(fast)
+# Loading work.digit(fast)
+# Loading work.keypad(fast)
+# Loading work.mpx(fast)
+# Loading work.sevseg(fast)
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'dut'.  Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut File: C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv Line: 23
+# ** Warning: (vsim-3722) C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv(23): [TFMPC] - Missing connection for port 'led1'.
+run -all
+# Checking Key 1
+# Break key hit
+# Break in Module mpx at C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/mpx.sv line 21
+# Compile of debouncer.sv was successful.
+# Compile of keypad.sv was successful.
+# Compile of mpx.sv was successful.
+# Compile of scanner.sv was successful.
+# Compile of sevseg.sv was successful.
+# Compile of tb_debouncer.sv was successful.
+# Compile of tb_keypad.sv was successful.
+# Compile of tb_mpx.sv was successful.
+# Compile of tb_scanner.sv was successful.
+# Compile of tb_sevseg.sv was successful.
+# Compile of tb_top.sv was successful.
+# Compile of top.sv was successful.
+# Compile of tb_digit.sv was successful.
+# Compile of digit.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of tb_sync.sv was successful.
+# 16 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.synchronizer(fast)
+# Loading work.scanner(fast)
+# Loading work.debouncer(fast)
+# Loading work.digit(fast)
+# Loading work.keypad(fast)
+# Loading work.mpx(fast)
+# Loading work.sevseg(fast)
+run -all
+# Checking Key 1
+#  seg = 1000000 (1111001 expected)
+# Checking when pressing other key
+#  seg = 1000000 (1111001 expected)
+# Checking key release
+#  seg = 1000000 (1111001 expected)
+# Checking Key 2
+# Break key hit
+# Simulation stop requested.
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Compile of tb_top.sv failed with 1 errors.
+# Compile of tb_top.sv was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.synchronizer(fast)
+# Loading work.scanner(fast)
+# Loading work.debouncer(fast)
+# Loading work.digit(fast)
+# Loading work.keypad(fast)
+# Loading work.mpx(fast)
+# Loading work.sevseg(fast)
+# Compile of tb_top.sv was successful.
+run -all
+# Checking Key 1
+# Checking when pressing other key
+# Checking key release
+# Checking Key 2
+# Break key hit
+# Break in Module tb_top at C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv line 27
+# Compile of debouncer.sv was successful.
+# Compile of keypad.sv was successful.
+# Compile of mpx.sv was successful.
+# Compile of scanner.sv was successful.
+# Compile of sevseg.sv was successful.
+# Compile of tb_debouncer.sv was successful.
+# Compile of tb_keypad.sv was successful.
+# Compile of tb_mpx.sv was successful.
+# Compile of tb_scanner.sv was successful.
+# Compile of tb_sevseg.sv was successful.
+# Compile of tb_top.sv was successful.
+# Compile of top.sv was successful.
+# Compile of tb_digit.sv was successful.
+# Compile of digit.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of tb_sync.sv was successful.
+# 16 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.synchronizer(fast)
+# Loading work.scanner(fast)
+# Loading work.debouncer(fast)
+# Loading work.digit(fast)
+# Loading work.keypad(fast)
+# Loading work.mpx(fast)
+# Loading work.sevseg(fast)
+run -all
+# Checking Key 1
+# Checking when pressing other key
+# Checking key release
+# Checking Key 2
+# Checking when pressing other key
+# Checking key release
+# ** Note: $finish    : C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv(104)
+#    Time: 1911 ns  Iteration: 0  Instance: /tb_top
+# 1
+# Break in Module tb_top at C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv line 104
+# Compile of tb_top.sv was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.synchronizer(fast)
+# Loading work.scanner(fast)
+# Loading work.debouncer(fast)
+# Loading work.digit(fast)
+# Loading work.keypad(fast)
+# Loading work.mpx(fast)
+# Loading work.sevseg(fast)
+run -all
+# Checking Key 1
+# Checking when pressing other key
+# Checking key release
+# Checking Key 2
+# Checking when pressing other key
+# Checking key release
+# Checking Key 3
+# Checking when pressing other key
+# Checking key release
+# Checking Key A
+# Checking when pressing other key
+# Checking key release
+# Checking Key 4
+# Checking when pressing other key
+# Checking key release
+# Checking Key 5
+# Checking when pressing other key
+# Checking key release
+# Checking Key 6
+# Checking when pressing other key
+# Checking key release
+# Checking Key B
+# Checking when pressing other key
+# Checking key release
+# Checking Key 7
+# Checking when pressing other key
+# Checking key release
+# Checking Key 8
+# Checking when pressing other key
+# Checking key release
+# Checking Key 9
+# Checking when pressing other key
+# Checking key release
+# Checking Key c
+# Checking when pressing other key
+# Checking key release
+# Checking Key E
+# Checking when pressing other key
+# Checking key release
+# Checking Key 0
+# Checking when pressing other key
+# Checking key release
+# Checking Key F
+# Checking when pressing other key
+# Checking key release
+# Checking Key D
+# Checking when pressing other key
+# Checking key release
+# ** Note: $finish    : C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv(543)
+#    Time: 8911 ns  Iteration: 0  Instance: /tb_top
+# 1
+# Break in Module tb_top at C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv line 543
+# Compile of debouncer.sv was successful.
+# Compile of keypad.sv was successful.
+# Compile of mpx.sv was successful.
+# Compile of scanner.sv was successful.
+# Compile of sevseg.sv was successful.
+# Compile of tb_debouncer.sv was successful.
+# Compile of tb_keypad.sv was successful.
+# Compile of tb_mpx.sv was successful.
+# Compile of tb_scanner.sv was successful.
+# Compile of tb_sevseg.sv was successful.
+# Compile of tb_top.sv was successful.
+# Compile of top.sv was successful.
+# Compile of tb_digit.sv was successful.
+# Compile of digit.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of tb_sync.sv was successful.
+# 16 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vopt-143) Recognized 1 FSM in module "debouncer(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.synchronizer(fast)
+# Loading work.scanner(fast)
+# Loading work.debouncer(fast)
+# Loading work.digit(fast)
+# Loading work.keypad(fast)
+# Loading work.mpx(fast)
+# Loading work.sevseg(fast)
+run -all
+# Checking Key 1
+# Checking when pressing other key
+# Checking key release
+# Checking Key 2
+# Checking when pressing other key
+# Checking key release
+# Checking Key 3
+# Checking when pressing other key
+# Checking key release
+# Checking Key A
+# Checking when pressing other key
+# Checking key release
+# Checking Key 4
+# Checking when pressing other key
+# Checking key release
+# Checking Key 5
+# Checking when pressing other key
+# Checking key release
+# Checking Key 6
+# Checking when pressing other key
+# Checking key release
+# Checking Key B
+# Checking when pressing other key
+# Checking key release
+# Checking Key 7
+# Checking when pressing other key
+# Checking key release
+# Checking Key 8
+# Checking when pressing other key
+# Checking key release
+# Checking Key 9
+# Checking when pressing other key
+# Checking key release
+# Checking Key c
+# Checking when pressing other key
+# Checking key release
+# Checking Key E
+# Checking when pressing other key
+# Checking key release
+# Checking Key 0
+# Checking when pressing other key
+# Checking key release
+# Checking Key F
+# Checking when pressing other key
+# Checking key release
+# Checking Key D
+# Checking when pressing other key
+# Checking key release
+# ** Note: $finish    : C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv(543)
+#    Time: 262484551 ns  Iteration: 0  Instance: /tb_top
+# 1
+# Break in Module tb_top at C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv line 543
+quit -sim
+# End time: 23:22:17 on Sep 23,2025, Elapsed time: 1:16:55
+# Errors: 0, Warnings: 2
+# Load canceled
+# Compile of tb_sync.sv was successful.
+vsim -gui -L iCE40UP -Lf iCE40UP -voptargs=+acc work.tb_sync
+# vsim -gui -L iCE40UP -Lf iCE40UP -voptargs="+acc" work.tb_sync 
+# Start time: 23:23:17 on Sep 23,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_sync(fast)
+# Loading work.synchronizer(fast)
+add wave -position insertpoint sim:/tb_sync/*
+run -all
+#  sync_signal = xxxx (1111 expected)
+# ** Note: $finish    : C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_sync.sv(46)
+#    Time: 61 ns  Iteration: 0  Instance: /tb_sync
+# 1
+# Break in Module tb_sync at C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_sync.sv line 46
+add wave -position insertpoint sim:/tb_sync/dut/*
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.tb_sync(fast)
+# Loading work.synchronizer(fast)
+run -all
+#  sync_signal = xxxx (1111 expected)
+# ** Note: $finish    : C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_sync.sv(46)
+#    Time: 61 ns  Iteration: 0  Instance: /tb_sync
+# 1
+# Break in Module tb_sync at C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_sync.sv line 46
+# Compile of tb_sync.sv was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_sync(fast)
+# Loading work.synchronizer(fast)
+run -all
+# ** Note: $finish    : C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_sync.sv(40)
+#    Time: 81 ns  Iteration: 0  Instance: /tb_sync
+# 1
+# Break in Module tb_sync at C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_sync.sv line 40

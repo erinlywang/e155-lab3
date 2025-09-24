@@ -1,0 +1,617 @@
+m255
+K4
+z2
+Z0 !s12c _opt2
+Z1 !s99 nomlopt
+R0
+R1
+Z2 !s12c _opt
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+Z3 !s12c _opt1
+R1
+R3
+R1
+R3
+R1
+R0
+R1
+R0
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R3
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R3
+R1
+R3
+R1
+R3
+R1
+R3
+R1
+R3
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R3
+R1
+R3
+R1
+R3
+R1
+R3
+R1
+R3
+R1
+R3
+R1
+R3
+R1
+R3
+R1
+R3
+R1
+R3
+R1
+R3
+R1
+R3
+R1
+R3
+R1
+R3
+R1
+R3
+R1
+R2
+R1
+!s11f vlog 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z4 dC:/Users/erinwang/Desktop/E155_lab3/lab3_ew
+T_opt
+!s110 1758694589
+VYfUJanhzQXhBPAAj9U5G=0
+04 6 4 work tb_top fast 0
+=15-00be43e56ed7-68d38cbd-9f-9074
+R1
+!s12f OEM25U11 
+Z5 !s12b OEM100
+Z6 !s124 OEM100
+Z7 !s135 nogc
+Z8 o-quiet -auto_acc_if_foreign -work work -L iCE40UP -Lf iCE40UP +acc
+Z9 tCvgOpt 0
+n@_opt
+Z10 OL;O;2024.2;79
+R4
+T_opt1
+!s110 1758689603
+V^@498BVm`Sz9H?48g6cQP1
+04 10 4 work tb_scanner fast 0
+=3-00be43e56ed7-68d37943-138-216c
+R1
+Z11 !s12f OEM25U2 
+R5
+R6
+R7
+R8
+R9
+n@_opt1
+R10
+R4
+T_opt2
+!s110 1758695108
+VI74@lI4W:CcH`8jk_[TMi2
+04 7 4 work tb_sync fast 0
+=3-00be43e56ed7-68d38ec4-166-9314
+R1
+R11
+R5
+R6
+R7
+R8
+R9
+n@_opt2
+R10
+vdebouncer
+2C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/debouncer.sv
+Z12 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z13 !s110 1758694573
+!i10b 1
+!s100 [8T8X8^C58E7<ag84:Y7U1
+IPBj1E`L``z:MCR6jVT`Qb2
+S1
+R4
+w1758694569
+8C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/debouncer.sv
+FC:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/debouncer.sv
+!i122 334
+Z14 L0 9 87
+Z15 VDg1SIo80bB@j0V0VzS_@n1
+Z16 OL;L;2024.2;79
+r1
+!s85 0
+31
+Z17 !s108 1758694573.000000
+!s107 C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/debouncer.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/debouncer.sv|
+!i113 0
+Z18 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R9
+vdigit
+2C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/digit.sv
+R12
+Z19 !s110 1758694574
+!i10b 1
+!s100 oL`ShMg=@Wdo=mVYkz=<G3
+IiKa2m]A0::f`IiVNzWN4`3
+S1
+R4
+w1758673827
+8C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/digit.sv
+FC:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/digit.sv
+!i122 347
+L0 9 77
+R15
+R16
+r1
+!s85 0
+31
+Z20 !s108 1758694574.000000
+!s107 C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/digit.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/digit.sv|
+!i113 0
+R18
+R9
+vkeypad
+2C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/keypad.sv
+R12
+R13
+!i10b 1
+!s100 2Ea:99FKmOXTS`IK;HkQ@1
+IdRdUahejTgV^XF_E3aKJ:1
+S1
+R4
+w1758685719
+8C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/keypad.sv
+FC:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/keypad.sv
+!i122 335
+L0 8 27
+R15
+R16
+r1
+!s85 0
+31
+R17
+!s107 C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/keypad.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/keypad.sv|
+!i113 0
+R18
+R9
+vmpx
+2C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/mpx.sv
+R12
+R13
+!i10b 1
+!s100 2AIkXGQh78KoZGhNBXgF82
+Ia>mjBW6J7CN2f:AU2n^V]3
+S1
+R4
+w1758694562
+8C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/mpx.sv
+FC:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/mpx.sv
+!i122 336
+L0 9 28
+R15
+R16
+r1
+!s85 0
+31
+R17
+!s107 C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/mpx.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/mpx.sv|
+!i113 0
+R18
+R9
+vscanner
+2C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/scanner.sv
+R12
+R13
+!i10b 1
+!s100 ;gBc[nIS>Kgo<5hT7zA[>3
+I@]_G_obR^VOESED]njoof2
+S1
+R4
+w1758673459
+8C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/scanner.sv
+FC:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/scanner.sv
+!i122 337
+R14
+R15
+R16
+r1
+!s85 0
+31
+R17
+!s107 C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/scanner.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/scanner.sv|
+!i113 0
+R18
+R9
+vsevseg
+2C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/sevseg.sv
+R12
+R13
+!i10b 1
+!s100 Yj<DcYn^DQU3mF<^e6dfj2
+IliKA>_bilgcX13KYPDS[m1
+S1
+R4
+w1758673523
+8C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/sevseg.sv
+FC:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/sevseg.sv
+!i122 338
+L0 8 24
+R15
+R16
+r1
+!s85 0
+31
+R17
+!s107 C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/sevseg.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/sevseg.sv|
+!i113 0
+R18
+R9
+vsynchronizer
+2C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/synchronizer.sv
+R12
+R19
+!i10b 1
+!s100 ^U3FTV7UhDBH4XHF8YYgi2
+IQM=N?GI6XJL>ag<WB59A@0
+S1
+R4
+w1758673518
+8C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/synchronizer.sv
+FC:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/synchronizer.sv
+!i122 348
+L0 9 22
+R15
+R16
+r1
+!s85 0
+31
+R20
+!s107 C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/synchronizer.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/synchronizer.sv|
+!i113 0
+R18
+R9
+vtb_debouncer
+2C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_debouncer.sv
+R12
+R13
+!i10b 1
+!s100 8_Ngi2oLD3F=Z_I@>jo=93
+I`Eh9W:3^Ul9Ra=mccm9Bg0
+S1
+R4
+w1758687263
+8C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_debouncer.sv
+FC:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_debouncer.sv
+!i122 339
+L0 12 98
+R15
+R16
+r1
+!s85 0
+31
+R17
+!s107 C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_debouncer.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_debouncer.sv|
+!i113 0
+R18
+R9
+vtb_digit
+2C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_digit.sv
+R12
+R19
+!i10b 1
+!s100 RT]TadK[MezkR^19MmC@X1
+IzQP7kHCZREgoT^DkRn^_71
+S1
+R4
+w1758673716
+8C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_digit.sv
+FC:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_digit.sv
+!i122 346
+L0 14 102
+R15
+R16
+r1
+!s85 0
+31
+R20
+!s107 C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_digit.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_digit.sv|
+!i113 0
+R18
+R9
+vtb_keypad
+2C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv
+R12
+R19
+!i10b 1
+!s100 bEz^4Q_=4[IKm=SV[j8gQ3
+ILCaHfJIjM=mhFD<mo7OZN0
+S1
+R4
+w1758685836
+8C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv
+FC:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv
+!i122 340
+L0 13 137
+R15
+R16
+r1
+!s85 0
+31
+R20
+!s107 C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_keypad.sv|
+!i113 0
+R18
+R9
+vtb_mpx
+2C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_mpx.sv
+R12
+R19
+!i10b 1
+!s100 eOnCNm>iz7[`0D_bhC2V52
+I<AV1FaoFOf;lI=SEOGmEQ0
+S1
+R4
+w1758673535
+8C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_mpx.sv
+FC:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_mpx.sv
+!i122 341
+L0 11 50
+R15
+R16
+r1
+!s85 0
+31
+R20
+!s107 C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_mpx.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_mpx.sv|
+!i113 0
+R18
+R9
+vtb_scanner
+2C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_scanner.sv
+R12
+R19
+!i10b 1
+!s100 eZ0LWf7UAVa76ch=^;gB>3
+IQz46HoO6D4_aZB4lkzPQg2
+S1
+R4
+w1758689725
+8C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_scanner.sv
+FC:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_scanner.sv
+!i122 342
+L0 12 83
+R15
+R16
+r1
+!s85 0
+31
+R20
+!s107 C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_scanner.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_scanner.sv|
+!i113 0
+R18
+R9
+vtb_sevseg
+2C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_sevseg.sv
+R12
+R19
+!i10b 1
+!s100 ZH]5VJ7UPL`IePIS2=QdC0
+IBhzRS?5T5XDQf6:mll[Qh2
+S1
+R4
+w1758408725
+8C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_sevseg.sv
+FC:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_sevseg.sv
+!i122 343
+L0 9 51
+R15
+R16
+r1
+!s85 0
+31
+R20
+!s107 C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_sevseg.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_sevseg.sv|
+!i113 0
+R18
+R9
+vtb_sync
+2C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_sync.sv
+R12
+!s110 1758695103
+!i10b 1
+!s100 n35E6WPhN`j;[2E@95KRU2
+Ic@[OSS>Oi8gjM7UK@NRZB1
+S1
+R4
+w1758695096
+8C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_sync.sv
+FC:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_sync.sv
+!i122 351
+L0 11 33
+R15
+R16
+r1
+!s85 0
+31
+!s108 1758695103.000000
+!s107 C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_sync.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_sync.sv|
+!i113 0
+R18
+R9
+vtb_top
+2C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv
+R12
+R19
+!i10b 1
+!s100 2P^1HZA0nN9Kn<?bUe9E]2
+IW`oNQ[>]>SK8k@oSXZaQd1
+S1
+R4
+w1758694510
+8C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv
+FC:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv
+!i122 344
+L0 11 536
+R15
+R16
+r1
+!s85 0
+31
+R20
+!s107 C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/tb_top.sv|
+!i113 0
+R18
+R9
+vtop
+2C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/top.sv
+R12
+R19
+!i10b 1
+!s100 kEI17miDn<<^eY8^ZGUVl1
+IG>GHXnZC[>;Ni9ZEmE0iV2
+S1
+R4
+w1758693318
+8C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/top.sv
+FC:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/top.sv
+!i122 345
+L0 10 45
+R15
+R16
+r1
+!s85 0
+31
+R20
+!s107 C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/top.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/erinwang/Desktop/E155_lab3/lab3_ew/source/impl_1/top.sv|
+!i113 0
+R18
+R9
