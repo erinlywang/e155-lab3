@@ -1,6 +1,6 @@
 /// Author: Erin Wang
 /// Email: erinwang@g.hmc.edu
-/// Date: 09/09/2025
+/// Date: 09/23/2025
 
 // tb_sevseg module tests the sevensegment module 
 // It applies inputs to sevensegment module and checks if outputs are as expected. 
