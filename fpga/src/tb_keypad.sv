@@ -1,5 +1,5 @@
 /// Author: Erin Wang
-/// Email: eringwang@g.hmc.edu
+/// Email: erinwang@g.hmc.edu
 /// Date: 09/20/2025
 
 // tb_keypad module tests the keypad module 
