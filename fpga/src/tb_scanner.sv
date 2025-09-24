@@ -1,6 +1,6 @@
 /// Author: Erin Wang
 /// Email: erinwang@g.hmc.edu
-/// Date: 09/20/2025
+/// Date: 09/23/2025
 
 // tb_scanner module tests the scanner module 
 // It applies a row and whether the previous input has been debounced
