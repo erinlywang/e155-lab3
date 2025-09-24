@@ -1,6 +1,6 @@
 /// Author: Erin Wang
 /// Email: erinwang@g.hmc.edu
-/// Date: 09/08/2025
+/// Date: 09/23/2025
 
 // mpx module takes a a clk and reset input
 // and outputs a select logic for the multiplexer logic to choose switch inputs
