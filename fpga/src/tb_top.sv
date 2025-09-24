@@ -1,6 +1,6 @@
 /// Author: Erin Wang
 /// Email: erinwang@g.hmc.edu
-/// Date: 09/08/2025
+/// Date: 09/23/2025
 
 // tb_top module tests the top module 
 // It applies inputs to top module and checks if outputs are as expected through assert statements 
