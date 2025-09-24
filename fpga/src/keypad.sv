@@ -1,6 +1,6 @@
 /// Author: Erin Wang
 /// Email: erinwang@g.hmc.edu
-/// Date: 09/13/2025
+/// Date: 09/23/2025
 
 // keypad module takes row and column input from a keypad
 // and outputs the corresponding 4-bit binary to the hexadecimal digit
